@@ -620,7 +620,7 @@ if uploaded_images:
 
                 predictions, attention_weights = transformer(img_tensor_val,output,False,dec_mask)
 
-                transformer.load_weights('image_caption_transformer epoch 50_45.h5')
+                transformer.load_weights('image_caption_transformer_epoch_50_45.h5')
                 predicted_words, _, _ = evaluate(image_path)
                 caption_predicted = ' '.join(predicted_words)
                 captions.append(caption_predicted)  # Add caption to the list
